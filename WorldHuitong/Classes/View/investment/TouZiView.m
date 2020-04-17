@@ -1,0 +1,14 @@
+//
+//  TouZiView.m
+//  WorldHuitong
+//
+//  Created by TXHT on 16/5/23.
+//  Copyright © 2016年 huitongp2p.com. All rights reserved.
+//
+
+#import "TouZiView.h"
+
+@implementation TouZiView
+
+
+@end

@@ -1,0 +1,64 @@
+//
+//  WorldHuitong-PrefixHeader.pch
+//  WorldHuitong
+//
+//  Created by TXHT on 16/4/5.
+//  Copyright © 2016年 huitongp2p.com. All rights reserved.
+//
+
+#ifndef WorldHuitong_PrefixHeader_pch
+#define WorldHuitong_PrefixHeader_pch
+
+
+/**根据rgb取颜色**/
+#define RGBA_COLOR(R, G, B, A) [UIColor colorWithRed:((R) / 255.0f) green:((G) / 255.0f) blue:((B) / 255.0f) alpha:A]
+
+/**天下汇通的View的背景颜色**/
+#define HT_BG_COLOR [UIColor colorWithRed:((241) / 255.0f) green:((241) / 255.0f) blue:((241) / 255.0f) alpha:1]
+
+/**天下汇通的颜色**/
+#define HT_COLOR [UIColor colorWithRed:(239 / 255.0f) green:(171 / 255.0f) blue:(53 / 255.0f) alpha:1.0f]
+
+/**天下汇通成功的颜色颜色**/
+#define HT_TCOLOR [UIColor colorWithRed:(83 / 255.0f) green:(215 / 255.0f) blue:(106 / 255.0f) alpha:1.0f]
+
+/**天下汇通警告的颜色颜色**/
+#define HT_WCOLOR [UIColor colorWithRed:(221 / 255.0f) green:(170 / 255.0f) blue:(59 / 255.0f) alpha:1.0f]
+
+/**屏幕的尺寸**/
+#define kScreenWidth [[UIScreen mainScreen] bounds].size.width
+#define kScreenHeigth [[UIScreen mainScreen] bounds].size.height
+
+//可用的宏
+#define NUMBERS @"0123456789.\n"                            //代表可以输入数字和换行
+//#define kBaseUrl @"http://test.huitongp2p.com/api/index.php"
+#define kBaseUrl @"https://www.huitongp2p.com/api/index.php"
+
+#define kBaseImageUrl @"https://www.huitongp2p.com"
+#define kFimage @"failure"
+#define kTimage @"Checkmark"
+#define kNa_bg_image @"ht_na_bg.png"
+#define kUSER_ID ([[NSUserDefaults standardUserDefaults]objectForKey:@"user_id"])
+#define kaccount_min 100                                   //起头金额
+
+//头文件
+#import "AppDelegate.h"
+#import "MJRefresh.h"                                       //MJ刷新
+#import "MJExtension.h"
+#import "LogController.h"
+#import <CommonCrypto/CommonCrypto.h>                       //MD5加密
+#import "AFNetworking.h"                                    //网络请求
+#import "UIKit+AFNetworking.h"
+#import "HYBNetworking.h"                                   //分装AFN
+#import <LocalAuthentication/LocalAuthentication.h>         //指纹解锁
+
+//工具类
+#import "Tools.h"
+#import "HTView.h"
+
+
+//1.首次启动判断：
+#define First_Launched @"firstLaunch"
+
+
+#endif /* WorldHuitong_PrefixHeader_pch */

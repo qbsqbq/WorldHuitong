@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ScuessCell" rowHeight="108" id="KGk-i7-Jjw" customClass="ScuessCell">
+            <rect key="frame" x="0.0" y="0.0" width="431" height="108"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="431" height="107"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hdO-Bq-hZQ">
+                        <rect key="frame" x="10" y="10" width="411" height="87"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iXd-vD-fER">
+                                <rect key="frame" x="30" y="22" width="351" height="44"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Detail_icon_succeed" translatesAutoresizingMaskIntoConstraints="NO" id="Rii-F1-2Vg">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="7HY-7C-3zA"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="恭喜您！注册成功。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zdp-aD-S8V">
+                                        <rect key="frame" x="59" y="0.0" width="292" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="2xS-Ov-VSx"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Zdp-aD-S8V" firstAttribute="top" secondItem="iXd-vD-fER" secondAttribute="top" id="OgJ-6P-hFl"/>
+                                    <constraint firstAttribute="bottom" secondItem="Zdp-aD-S8V" secondAttribute="bottom" id="Pwn-lg-T6j"/>
+                                    <constraint firstAttribute="height" constant="44" id="WZ0-gC-U5j"/>
+                                    <constraint firstItem="Rii-F1-2Vg" firstAttribute="top" secondItem="iXd-vD-fER" secondAttribute="top" id="gMt-qJ-Hbq"/>
+                                    <constraint firstAttribute="bottom" secondItem="Rii-F1-2Vg" secondAttribute="bottom" id="kf7-q8-zUZ"/>
+                                    <constraint firstItem="Rii-F1-2Vg" firstAttribute="leading" secondItem="iXd-vD-fER" secondAttribute="leading" id="nnm-UU-SqQ"/>
+                                    <constraint firstItem="Zdp-aD-S8V" firstAttribute="leading" secondItem="Rii-F1-2Vg" secondAttribute="trailing" constant="15" id="sJK-NX-ALP"/>
+                                    <constraint firstAttribute="trailing" secondItem="Zdp-aD-S8V" secondAttribute="trailing" id="vLR-Tj-ryG"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iXd-vD-fER" firstAttribute="centerY" secondItem="hdO-Bq-hZQ" secondAttribute="centerY" id="NmC-pI-lhI"/>
+                            <constraint firstAttribute="trailing" secondItem="iXd-vD-fER" secondAttribute="trailing" constant="30" id="TMe-VH-OvW"/>
+                            <constraint firstItem="iXd-vD-fER" firstAttribute="leading" secondItem="hdO-Bq-hZQ" secondAttribute="leading" constant="30" id="lhc-0X-jZd"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="hdO-Bq-hZQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="05b-Gg-O7a"/>
+                    <constraint firstItem="hdO-Bq-hZQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="5Nv-Gr-b1B"/>
+                    <constraint firstAttribute="trailing" secondItem="hdO-Bq-hZQ" secondAttribute="trailing" constant="10" id="Vyb-3b-c6n"/>
+                    <constraint firstAttribute="bottom" secondItem="hdO-Bq-hZQ" secondAttribute="bottom" constant="10" id="hWP-a5-YeV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="bg_viw" destination="hdO-Bq-hZQ" id="ubm-Lu-zhI"/>
+            </connections>
+            <point key="canvasLocation" x="297.5" y="355"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Detail_icon_succeed" width="22" height="22"/>
+    </resources>
+</document>
