@@ -82,12 +82,10 @@
     //推荐标数据
     [self loadTheRecommendData];
 
+    //添加刷新
     [self autoRefreshing];
     
-    
 }
-
-
 
 #pragma ----UICollectionViewDataSource----
 
